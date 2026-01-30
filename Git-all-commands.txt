@@ -1,0 +1,18 @@
+
+source--https://youtu.be/mAFoROnOfHs?si=MHKRHmFhRA99XQOy
+
+git init --initializes git repository in the current directory
+git clone repo_link --used to copy a repository from a remote/github source to your local machine
+git remote add origin repo_link --Adds a remote to your local Git configuration, with the name origin,allows push and pull
+
+git status --shows the status of changes as untracked, modified, or staged
+
+git add .	--Stages new and modified files in the current directory and its subdirectories, but not deletions.
+git add -A 	--Stages new, modified, and deleted files in the entire repository.
+git add <file>	--Stages specific files or directories that you specify.  
+git add * --Stages all new and modified files in the current directory, but not deletions.
+git add *.js --Stages all JavaScript files in the current directory.
+
+git commit -m "commit message" --commits the changes in the staging area with a descriptive message
+git push origin branch_name --pushes the committed changes to the remote repository
+git reset --hard HEAD~1 --undoes the last commit and discards all changes
