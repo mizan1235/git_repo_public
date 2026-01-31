@@ -30,4 +30,11 @@ git log --oneline --shows the commit history in a compact format, displaying eac
 git show --shows the details of a specific commit, including changes made, author, date, and commit message
 git diff --shows the differences between the working directory and the staging area or between two commits
 
---branching 41:29
+git branch --lists all branches in the repository
+git branch branch_name --creates a new branch with the specified name
+git checkout branch_name --switches to the specified branch
+git checkout -b branch_name --creates a new branch and switches to it
+git merge branch_name --merges the specified branch into the current branch
+git merge staging --merges the staging area changes into the current branch
+
+
