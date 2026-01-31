@@ -45,3 +45,12 @@ git push origin branch_name --pushes the specified branch to the remote reposito
             --sometime may give error fr pull requested
 git push origin main --force
 git pull --fetches and merges changes from the remote repository to the current branch
+git branch --set-upstream-to=origin/main main --sets the upstream branch for the local main branch to origin/main
+git pull origin branch_name --fetches and merges changes from the specified branch in the remote repository to the current branch
+
+git restore <file> --discards changes in the working directory for the specified file, reverting it to the last committed state
+git restore . --discards changes in the working directory for all files, reverting them to the last committed state
+git resore --staged <file> --unstages the specified file, keeping the changes in the working directory
+git stash --saves changes in the working directory and staging area to a temporary stash, allowing you to switch branches or work on something else without committing the changes
+git stash pop --applies the most recent stash and removes it from the stash list
+git stash list --lists all stashes saved in the repository
