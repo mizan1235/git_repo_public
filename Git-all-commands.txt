@@ -54,3 +54,6 @@ git resore --staged <file> --unstages the specified file, keeping the changes in
 git stash --saves changes in the working directory and staging area to a temporary stash, allowing you to switch branches or work on something else without committing the changes
 git stash pop --applies the most recent stash and removes it from the stash list
 git stash list --lists all stashes saved in the repository
+git stash apply stash@{n} --applies a specific stash identified by its index n without removing it from the stash list
+git stash drop  --empty stash list
+git revert commit_id --creates a new commit that undoes the changes made in the specified commit, preserving the commit history
