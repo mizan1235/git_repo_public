@@ -13,6 +13,21 @@ git add <file>	--Stages specific files or directories that you specify.
 git add * --Stages all new and modified files in the current directory, but not deletions.
 git add *.js --Stages all JavaScript files in the current directory.
 
-git commit -m "commit message" --commits the changes in the staging area with a descriptive message
+git commit -m "commit message" --commits the changes in the staging area with a  descriptive message , for first time commit it may ask for email and name
+
 git push origin branch_name --pushes the committed changes to the remote repository
-git reset --hard HEAD~1 --undoes the last commit and discards all changes
+
+git reset --unstages the files, keeping the changes in the working directory
+git reset --hard  --resets the staging area and working directory to match the last commit, discarding all changes
+
+git rm <file> --removes the file from working directory and stages the removal for commit
+git rm -f <file> --forces the removal of a file from the working directory and stages the removal for commit
+ git rm --cached <file> --unstages the file but keeps it in the working directory
+ git rm -r <directory> --removes a directory and its contents from the working directory and stages the removal for commit
+
+git log --shows the commit history for the current branch 
+git log --oneline --shows the commit history in a compact format, displaying each commit on a single line with its abbreviated hash and commit message
+git show --shows the details of a specific commit, including changes made, author, date, and commit message
+git diff --shows the differences between the working directory and the staging area or between two commits
+
+--branching 41:29
