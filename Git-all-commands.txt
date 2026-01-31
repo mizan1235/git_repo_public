@@ -40,3 +40,8 @@ git merge staging --merges the staging area changes into the current branch
 
 git checkout commit_id --switches to the specified commit, putting the repository in a detached HEAD state,
                          returning to the prev version of the project
+git push origin --all --pushes all branches to the remote repository
+git push origin branch_name --pushes the specified branch to the remote repository
+            --sometime may give error fr pull requested
+git push origin main --force
+git pull --fetches and merges changes from the remote repository to the current branch

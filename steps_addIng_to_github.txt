@@ -1,0 +1,16 @@
+git init 
+git add .
+git commit -m "initial commit"
+git branch -M main
+git remote add origin utl
+git push  origin main
+**brach name from git local and github must be same for push
+
+error like 
+ """ PS C:\Users\mizan\OneDrive\Desktop\Learnings\Github> git push origin main  
+remote: Permission to mizan1235/git_repo_public.git denied to mizanur067.
+fatal: unable to access 'https://github.com/mizan1235/git_repo_public.git/': The requested URL returned error: 403""
+solution:
+    """ git remote set-url origin https://mizanur067:<personal_access_token>@github.com/mizan1235/git_repo_public.git """
+     """ go to repo_settings->contributor , search username/email and add as contributor """
+     
